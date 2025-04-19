@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riddle Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bugtong-Bugtong</h1>
+
+        <div class="player-info">
+            <label for="playerName">Your Name:</label>
+            <input type="text" id="playerName" placeholder="Enter your name">
+            <p>Score: <span id="score">0</span></p>
+            <button id="record-score-btn" class="primary">Record Score</button>
+        </div>
+
+        <div class="riddle-container">
+            <p id="riddle-number"></p>
+            <p id="riddle"></p>
+            <img id="hint-image" src="" alt="Hint">
+        </div>
+
+        <div class="input-area">
+            <input type="text" id="guess-input" placeholder="Your Answer">
+            <div class="button-group">
+                <button id="check-guess-btn" class="primary">Check Answer</button>
+                <button id="reveal-answer-btn" class="secondary" disabled>Reveal Answer</button>
+                <button id="get-riddle-btn" class="primary">Get Riddle</button>
+            </div>
+        </div>
+
+        <p id="result"></p>
+
+        <div class="records-container">
+            <h2>Student Records</h2>
+            <ul id="studentRecords">
+                </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

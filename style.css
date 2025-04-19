@@ -1,0 +1,260 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e0f2f7 0%, #b3e5fc 100%); /* Gradient from light blue-green to soft blue */
+    margin: 0;
+    padding: 20px; /* Reduce padding to give more space */
+    box-sizing: border-box;
+    background-attachment: fixed; /* Ensures the background doesn't scroll */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for the container to blend with background */
+    padding: 20px; /* Reduce padding */
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 90%;
+    max-width: 700px; /* Reduce max-width */
+    max-height: 90vh; /* Make sure the container doesn't exceed the viewport height */
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Reduce gap between elements */
+    overflow-y: auto; /* Allow scrolling within the container if content overflows */
+}
+
+h1 {
+    color: #2e7d32;
+    margin-bottom: 15px; /* Reduce margin */
+    font-size: 2.5rem; /* Reduce font-size */
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.player-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px; /* Reduce padding */
+    background-color: #f9fbe7;
+    border-radius: 8px;
+}
+
+.player-info label {
+    font-weight: 600;
+    color: #558b2f;
+    font-size: 1.1rem; /* Reduce font-size */
+}
+
+.player-info input[type="text"] {
+    padding: 10px; /* Reduce padding */
+    border: 1px solid #8bc34a;
+    border-radius: 6px;
+    width: 40%;
+    max-width: 200px; /* Reduce width */
+    font-size: 1rem; /* Reduce font-size */
+}
+
+.player-info p {
+    font-weight: 600;
+    color: #1976d2;
+    font-size: 1.2rem; /* Reduce font-size */
+}
+
+.player-info button {
+    padding: 10px 18px; /* Reduce padding */
+    background-color: #43a047;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1rem; /* Reduce font-size */
+    transition: background-color 0.3s, transform 0.1s, box-shadow 0.3s;
+}
+
+.player-info button:hover {
+    background-color: #388e3c;
+    transform: scale(1.05);
+}
+
+.player-info button:active {
+    background-color: #2e7d32;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+    transform: translateY(1px);
+}
+
+.riddle-container {
+    background-color: #e8f5e9;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 15px; /* Reduce margin */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    width: 100%;
+}
+
+.riddle-label {
+    font-size: 1.2rem; /* Reduce font-size */
+    color: #ff9800;
+    font-weight: 600;
+    margin-bottom: 8px; /* Reduce margin */
+}
+
+.riddle-container p:last-child {
+    font-size: 3rem; /* Reduce font-size */
+    color: #388e3c;
+    margin-bottom: 12px; /* Reduce margin */
+    line-height: 1.4;
+    text-align: center;
+    font-weight: 700;
+    word-wrap: break-word;
+}
+
+#riddle-number {
+    font-weight: bold;
+    color: #ff9800;
+    margin-right: 8px; /* Reduce margin */
+}
+
+#hint-image {
+    max-width: 70%; /* Reduce max-width */
+    max-height: 180px; /* Reduce max-height */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px; /* Reduce margin */
+    object-fit: contain;
+}
+
+.input-area {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; /* Reduce gap */
+    padding: 12px 18px; /* Reduce padding */
+    background-color: #f1f8e9;
+    border-radius: 8px;
+}
+
+#guess-input {
+    padding: 10px; /* Reduce padding */
+    border: 1px solid #a5d6a7;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 400px; /* Reduce max-width */
+    font-size: 1.1rem; /* Reduce font-size */
+}
+
+.button-group {
+    display: flex;
+    gap: 15px; /* Reduce gap */
+    justify-content: center;
+}
+
+button {
+    padding: 10px 20px; /* Reduce padding */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 1.1rem; /* Reduce font-size */
+    transition: background-color 0.3s, box-shadow 0.3s, transform 0.1s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: scale(1.05);
+}
+
+button:active {
+    background-color: #2e7d32;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+    transform: translateY(1px);
+}
+
+.primary {
+    background-color: #43a047;
+    color: white;
+}
+
+.secondary {
+    background-color: #757575;
+    color: white;
+}
+
+#result {
+    margin-top: 15px; /* Reduce margin */
+    font-weight: 700;
+    font-size: 1.3rem; /* Reduce font-size */
+    text-align: center;
+}
+
+.correct {
+    color: #1976d2;
+}
+
+.incorrect {
+    color: #d32f2f;
+}
+
+.revealed {
+    color: #009688;
+}
+
+.warning {
+    color: #ff9800;
+    font-weight: 600;
+}
+
+.records-container {
+    background-color: #f1f8e9;
+    padding: 15px; /* Reduce padding */
+    border-radius: 10px;
+    margin-top: 20px; /* Reduce margin */
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.records-container h2 {
+    color: #388e3c;
+    margin-bottom: 12px; /* Reduce margin */
+    font-size: 1.4rem; /* Reduce font-size */
+    font-weight: 600;
+}
+
+.records-container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.records-container li {
+    padding: 10px 0; /* Reduce padding */
+    border-bottom: 1px solid #e0f2f7;
+    color: #43a047;
+    font-size: 1.1rem; /* Reduce font-size */
+}
+
+.records-container li:last-child {
+    border-bottom: none;
+}
+
+#record-score-btn.primary {
+    background-color: #1976d2;
+}
+
+#record-score-btn.primary:hover {
+    background-color: #1565c0;
+}
+
+#record-score-btn.primary:active {
+    background-color: #1565c0;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+    transform: translateY(1px);
+}
