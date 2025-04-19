@@ -36,11 +36,13 @@ h1 {
 
 .player-info {
     display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on small screens */
     justify-content: space-between;
     align-items: center;
-    padding: 10px 15px; /* Reduce padding */
+    padding: 10px 15px;
     background-color: #f9fbe7;
     border-radius: 8px;
+    gap: 10px; /* Optional: add spacing when wrapping */
 }
 
 .player-info label {
