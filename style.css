@@ -1,6 +1,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     display: flex;
+    flex-direction: column; /* Arrange container and footer vertically */
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -13,23 +14,24 @@ body {
 
 .container {
     background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for the container to blend with background */
-    padding: 20px; /* Reduce padding */
+    padding: 15px; /* Further reduce padding */
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     text-align: center;
     width: 90%;
-    max-width: 700px; /* Reduce max-width */
-    max-height: 90vh; /* Make sure the container doesn't exceed the viewport height */
+    max-width: 600px; /* Further reduce max-width */
+    max-height: 80vh; /* Further reduce max-height */
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Reduce gap between elements */
+    gap: 10px; /* Further reduce gap between elements */
     overflow-y: auto; /* Allow scrolling within the container if content overflows */
+    margin-bottom: 15px; /* Reduce margin to separate from the created-by */
 }
 
 h1 {
     color: #2e7d32;
-    margin-bottom: 15px; /* Reduce margin */
-    font-size: 2.5rem; /* Reduce font-size */
+    margin-bottom: 8px; /* Further reduce margin */
+    font-size: 2rem; /* Further reduce font-size */
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -39,80 +41,80 @@ h1 {
     flex-wrap: wrap; /* Allow items to wrap on small screens */
     justify-content: space-between;
     align-items: center;
-    padding: 10px 15px;
+    padding: 6px 10px; /* Further reduce padding */
     background-color: #f9fbe7;
     border-radius: 8px;
-    gap: 10px; /* Optional: add spacing when wrapping */
+    gap: 6px; /* Reduce gap when wrapping */
 }
 
 .player-info label {
     font-weight: 600;
     color: #558b2f;
-    font-size: 1.1rem; /* Reduce font-size */
+    font-size: 0.9rem; /* Further reduce font-size */
 }
 
 .player-info input[type="text"] {
-    padding: 10px; /* Reduce padding */
+    padding: 6px; /* Further reduce padding */
     border: 1px solid #8bc34a;
     border-radius: 6px;
-    width: 40%;
-    max-width: 200px; /* Reduce width */
-    font-size: 1rem; /* Reduce font-size */
+    width: 45%; /* Adjust width */
+    max-width: 150px; /* Further reduce max-width */
+    font-size: 0.8rem; /* Further reduce font-size */
 }
 
 .player-info p {
     font-weight: 600;
     color: #1976d2;
-    font-size: 1.2rem; /* Reduce font-size */
+    font-size: 1rem; /* Further reduce font-size */
 }
 
 .player-info button {
-    padding: 10px 18px; /* Reduce padding */
+    padding: 6px 10px; /* Further reduce padding */
     background-color: #43a047;
     color: white;
     border: none;
     border-radius: 6px;
     cursor: pointer;
     font-weight: 700;
-    font-size: 1rem; /* Reduce font-size */
+    font-size: 0.8rem; /* Further reduce font-size */
     transition: background-color 0.3s, transform 0.1s, box-shadow 0.3s;
 }
 
 .player-info button:hover {
     background-color: #388e3c;
-    transform: scale(1.05);
+    transform: scale(1.02); /* Even less scaling */
 }
 
 .player-info button:active {
     background-color: #2e7d32;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
-    transform: translateY(1px);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.2); /* Even less intense shadow */
+    transform: translateY(0.2px); /* Even less movement */
 }
 
 .riddle-container {
     background-color: #e8f5e9;
-    padding: 10px;
+    padding: 6px; /* Further reduce padding */
     border-radius: 10px;
-    margin-bottom: 15px; /* Reduce margin */
+    margin-bottom: 8px; /* Further reduce margin */
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08); /* Even less intense shadow */
     width: 100%;
 }
 
 .riddle-label {
-    font-size: 1.2rem; /* Reduce font-size */
+    font-size: 0.9rem; /* Further reduce font-size */
     color: #ff9800;
     font-weight: 600;
-    margin-bottom: 8px; /* Reduce margin */
+    margin-bottom: 3px; /* Further reduce margin */
 }
 
 .riddle-container p:last-child {
-    font-size: 3rem; /* Reduce font-size */
+    font-size: 1.4rem; /* Further reduce font-size */
     color: #388e3c;
-    margin-bottom: 12px; /* Reduce margin */
-    line-height: 1.4;
+    margin-bottom: 6px; /* Further reduce margin */
+    line-height: 1.2;
     text-align: center;
     font-weight: 700;
     word-wrap: break-word;
@@ -121,16 +123,17 @@ h1 {
 #riddle-number {
     font-weight: bold;
     color: #ff9800;
-    margin-right: 8px; /* Reduce margin */
+    margin-right: 3px; /* Further reduce margin */
+    font-size: 0.8rem; /* Further reduce font-size */
 }
 
 #hint-image {
-    max-width: 70%; /* Reduce max-width */
-    max-height: 180px; /* Reduce max-height */
+    max-width: 50%; /* Further reduce max-width */
+    max-height: 120px; /* Further reduce max-height */
     height: auto;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 15px; /* Reduce margin */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1); /* Even less intense shadow */
+    margin-bottom: 8px; /* Further reduce margin */
     object-fit: contain;
 }
 
@@ -138,47 +141,47 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px; /* Reduce gap */
-    padding: 12px 18px; /* Reduce padding */
+    gap: 8px; /* Further reduce gap */
+    padding: 8px 12px; /* Further reduce padding */
     background-color: #f1f8e9;
     border-radius: 8px;
 }
 
 #guess-input {
-    padding: 10px; /* Reduce padding */
+    padding: 6px; /* Further reduce padding */
     border: 1px solid #a5d6a7;
     border-radius: 8px;
     width: 80%;
-    max-width: 400px; /* Reduce max-width */
-    font-size: 1.1rem; /* Reduce font-size */
+    max-width: 300px; /* Further reduce max-width */
+    font-size: 0.9rem; /* Further reduce font-size */
 }
 
 .button-group {
     display: flex;
-    gap: 15px; /* Reduce gap */
+    gap: 8px; /* Further reduce gap */
     justify-content: center;
 }
 
 button {
-    padding: 10px 20px; /* Reduce padding */
+    padding: 6px 12px; /* Further reduce padding */
     border: none;
     border-radius: 8px;
     cursor: pointer;
     font-weight: 700;
-    font-size: 1.1rem; /* Reduce font-size */
+    font-size: 0.9rem; /* Further reduce font-size */
     transition: background-color 0.3s, box-shadow 0.3s, transform 0.1s;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); /* Even less intense shadow */
 }
 
 button:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    transform: scale(1.05);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.15); /* Even less intense hover shadow */
+    transform: scale(1.02); /* Even less scaling */
 }
 
 button:active {
     background-color: #2e7d32;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
-    transform: translateY(1px);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.3); /* Even less intense shadow */
+    transform: translateY(0.2px); /* Even less movement */
 }
 
 .primary {
@@ -192,9 +195,9 @@ button:active {
 }
 
 #result {
-    margin-top: 15px; /* Reduce margin */
+    margin-top: 8px; /* Further reduce margin */
     font-weight: 700;
-    font-size: 1.3rem; /* Reduce font-size */
+    font-size: 1rem; /* Further reduce font-size */
     text-align: center;
 }
 
@@ -217,17 +220,17 @@ button:active {
 
 .records-container {
     background-color: #f1f8e9;
-    padding: 15px; /* Reduce padding */
+    padding: 8px; /* Further reduce padding */
     border-radius: 10px;
-    margin-top: 20px; /* Reduce margin */
+    margin-top: 10px; /* Further reduce margin */
     text-align: left;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08); /* Even less intense shadow */
 }
 
 .records-container h2 {
     color: #388e3c;
-    margin-bottom: 12px; /* Reduce margin */
-    font-size: 1.4rem; /* Reduce font-size */
+    margin-bottom: 6px; /* Further reduce margin */
+    font-size: 1.1rem; /* Further reduce font-size */
     font-weight: 600;
 }
 
@@ -237,10 +240,10 @@ button:active {
 }
 
 .records-container li {
-    padding: 10px 0; /* Reduce padding */
+    padding: 6px 0; /* Further reduce padding */
     border-bottom: 1px solid #e0f2f7;
     color: #43a047;
-    font-size: 1.1rem; /* Reduce font-size */
+    font-size: 0.8rem; /* Further reduce font-size */
 }
 
 .records-container li:last-child {
@@ -257,6 +260,15 @@ button:active {
 
 #record-score-btn.primary:active {
     background-color: #1565c0;
-    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
-    transform: translateY(1px);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.3); /* Even less intense shadow */
+    transform: translateY(0.2px); /* Even less movement */
+}
+
+.created-by {
+    text-align: center;
+    margin-top: 10px; /* Reduce margin */
+    padding: 6px 0; /* Reduce padding */
+    color: #777;
+    font-size: 0.7rem; /* Even smaller font size */
+    border-top: 1px solid #ddd; /* Optional border */
 }
